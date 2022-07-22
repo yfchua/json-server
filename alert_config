@@ -1,0 +1,8 @@
+name,alert,mode,option,mntpt,server,receipent
+"Get top CPU processes","HostHighCpuLoad","exec","ps aux k-pcpu | head -n 10","","","user1"
+"Get top CPU processes for ggg","HostHighCpuLoad","exec","ps aux k-pcpu | head -n 10","","localhost","user1"
+"Get top MEM processes","HostOutOfMemory","exec","ps aux k-pmem | head -n 10","","","user1"
+"alert for disk usage","HostOutOfDiskSpace","exec","df -kl","/boot","","userX"
+"/boot alert for userX localhost","HostOutOfDiskSpace","email","df-kl","/boot","localhost","userX"
+"/boottt alert for userX localhost","HostOutOfDiskSpace","email","du -sk","/boottt","localhost","userX"
+"/boot alert for userX Server1","HostOutOfDiskSpace","email","ls -al","/boot","localhost","userY"
