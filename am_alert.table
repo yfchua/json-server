@@ -1,0 +1,9 @@
+CREATE TABLE am_alerts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT not null,
+    instance TEXT not null,
+    severity TEXT not null,
+    description TEXT not null,
+    startat TEXT  not null,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+)
